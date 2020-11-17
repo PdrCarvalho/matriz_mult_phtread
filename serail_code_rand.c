@@ -8,6 +8,7 @@
 
 void shuffle(int *array, int n)
 {
+    srand(10);
     if (n > 1) 
     {
         int i;

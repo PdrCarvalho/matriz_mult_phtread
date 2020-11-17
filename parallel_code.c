@@ -111,7 +111,7 @@ int main(int argc, char* argv[]){
     }
     fprintf(fp, "%d,%ld,%d\n", row,(end_process - start_process),thread_count+1);
     fclose(fp);
-   /*  // Imprime as matrizes definidas
+    // Imprime as matrizes definidas
     printf("---------------------------- 1 - Matriz Gerada ---------------------------------\n\n");
 
     for (i = 0; i < row; i++)
@@ -132,8 +132,8 @@ int main(int argc, char* argv[]){
         }
         printf("\n\n");
     }
- */
-  /*   printf("---------------------------- 3 - Matriz Gerada ---------------------------------\n\n");
+ 
+    printf("---------------------------- 3 - Matriz Gerada ---------------------------------\n\n");
 
     //Processamento e saida em tela  =  PRODUTO DAS MATRIZES
     for (i = 0; i < row; i++)
@@ -144,7 +144,7 @@ int main(int argc, char* argv[]){
         }
         printf("\n\n");
     }
-    printf("\n\n"); */
+    printf("\n\n");
     free(thread_handles);
     free(matrizA);
     free(matrizB);

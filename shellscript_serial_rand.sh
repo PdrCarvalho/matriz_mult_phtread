@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #SBATCH --partition=cluster
-#SBATCH --job-name=Serial
-#SBATCH --output=SerialOutput.out
-#SBATCH --error=SerialError.err
+#SBATCH --job-name=Serial_rand
+#SBATCH --output=SerialRandOutput.out
+#SBATCH --error=SerialRandError.err
 #SBATCH --time=0-02:0
 #SBATCH --hint=compute_bound 
 
@@ -28,7 +28,7 @@
 
         for tentativa in $(seq $tentativas) #Cria uma vetor de 1 a "tentativas"
         do
-            srun serial_code $size  #atualizar de acordo com OpenMP
+            srun serail_code_rand $size  #atualizar de acordo com OpenMP
         done
     done
 

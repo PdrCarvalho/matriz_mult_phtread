@@ -4,7 +4,7 @@
 #SBATCH --job-name=Parallel
 #SBATCH --output=ParallelOutput.out
 #SBATCH --error=ParallelError.err
-#SBATCH --time=0-00:2
+#SBATCH --time=0-02:0
 #SBATCH --hint=compute_bound 
 
 #SBATCH --nodes=1
@@ -21,9 +21,9 @@
 
 	tentativas=10 #Quantas vezes o código será executado
 
-	for cores in 4 8 16 32 #números de cores utilizados
+	for cores in 3 7 15 31 #números de cores utilizados
 	do
-			for size in 10 20 #tamanho do problema
+			for size in 1440 1600 1800 2080 #tamanho do problema
 			do   	
 				#echo -e "\n$cores\t$size\t\t\c" >> "tempo_de_mm.txt" 
 

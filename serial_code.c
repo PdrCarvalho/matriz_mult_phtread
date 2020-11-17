@@ -69,7 +69,7 @@ main(int argc, char const *argv[])
     }
     fprintf(fp, "%ld,%ld,\n", linhaA, (end_process - start_process));
     fclose(fp);
-    /* // Imprime as matrizes definidas
+    // Imprime as matrizes definidas
     printf("---------------------------- 1 - Matriz Gerada ---------------------------------\n\n");
 
     for (i = 0; i < linhaA; i++)
@@ -102,7 +102,7 @@ main(int argc, char const *argv[])
         }
         printf("\n\n");
     }
-    printf("\n\n"); */
+    printf("\n\n");
     free(matrizA);
     free(matrizB);
     free(matrizC);
